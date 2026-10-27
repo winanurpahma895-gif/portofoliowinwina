@@ -1,0 +1,457 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Penulisan | Wina</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #fff8f0;
+            color: #5b4545;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #f4c2c2;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #864f5a;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #754c4c;
+            margin-left: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            min-height: 480px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            padding: 60px 8%;
+            background: linear-gradient(135deg, #ffe3e3, #fff4df);
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h3 {
+            color: #b46c79;
+            font-size: 20px;
+        }
+
+        .hero-text h1 {
+            color: #864f5a;
+            font-size: 42px;
+            margin: 10px 0;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #d98f9c;
+            color: white;
+            padding: 12px 25px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #b96d7b;
+            transform: translateY(-3px);
+        }
+
+        .foto {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid white;
+            box-shadow: 0 5px 20px #d9a4a4;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .judul {
+            text-align: center;
+            font-size: 30px;
+            color: #a65f70;
+            margin-bottom: 30px;
+        }
+
+        .biodata-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+
+        .biodata {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            width: 100%;
+            max-width: 550px;
+            box-shadow: 0 5px 18px #ead6d6;
+        }
+
+        .biodata p {
+            padding: 8px 0;
+            border-bottom: 1px solid #f5e4e4;
+        }
+
+        .tentang {
+            background: #fff0e6;
+            text-align: center;
+        }
+
+        .tentang p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 5px 18px #ead6d6;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .icon {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #a65f70;
+            margin-bottom: 10px;
+        }
+
+        .karya {
+            background: #fff0e6;
+        }
+
+        .karya-box {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #ead6d6;
+        }
+
+        .karya-box h3 {
+            color: #a65f70;
+            margin-bottom: 10px;
+        }
+
+        .kontak {
+            text-align: center;
+        }
+
+        footer {
+            background: #f4c2c2;
+            padding: 20px;
+            text-align: center;
+            color: #754c4c;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 5px;
+                font-size: 12px;
+            }
+
+            .hero {
+                text-align: center;
+                gap: 30px;
+            }
+
+            .hero-text h1 {
+                font-size: 32px;
+            }
+
+            .foto {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGASI -->
+    <header>
+        <h2>Wina's Portfolio</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#biodata">Biodata</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#karya">Karya</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- HALAMAN UTAMA -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h3>HALO, SELAMAT DATANG!</h3>
+
+            <h1>Saya Wina</h1>
+
+            <p>
+                Penulis Pemula | Content Writer
+            </p>
+
+            <p>
+                Saya tertarik dengan dunia penulisan dan pembuatan
+                konten. Saya siap belajar, mengembangkan kemampuan,
+                dan membantu membuat tulisan yang rapi serta menarik.
+            </p>
+
+            <a href="#biodata" class="button">
+                Lihat Biodata
+            </a>
+        </div>
+
+        <div>
+            <!-- Ganti foto.jpg dengan nama file foto kamu -->
+            <img src="wina.jpeg" alt="Foto Profil Wina" class="foto">
+        </div>
+
+    </section>
+
+    <!-- BIODATA -->
+    <section id="biodata">
+
+        <h2 class="judul">Biodata Saya</h2>
+
+        <div class="biodata-container">
+
+            <div class="biodata">
+                <p><b>Nama:</b> Wina</p>
+                <p><b>Tempat, Tanggal Lahir:</b> Isi sesuai data kamu</p>
+                <p><b>Pendidikan:</b> SMK</p>
+                <p><b>Sekolah:</b> SMK Santana 2 Cibatu</p>
+                <p><b>Profesi:</b> Penulis Pemula</p>
+                <p><b>Minat:</b> Penulisan dan Pembuatan Konten</p>
+                <p><b>Email:</b> winanurpahma895@gmail.com</p>
+                <p><b>Domisili:</b>kp.sindangkerta ds.kertajaya kec.cibatu kab.garut prov.jawa barat</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TENTANG SAYA -->
+    <section class="tentang" id="tentang">
+
+        <h2 class="judul">Tentang Saya</h2>
+
+        <p>
+            Halo! Saya Wina, seorang pemula yang ingin mengembangkan
+            kemampuan di bidang penulisan. Saya senang menyusun kata,
+            membuat tulisan yang mudah dipahami, dan mempelajari
+            hal-hal baru.
+        </p>
+
+        <br>
+
+        <p>
+            Saat ini saya sedang membangun portofolio melalui contoh
+            karya dan latihan mandiri. Meskipun belum memiliki
+            pengalaman kerja profesional, saya berusaha untuk selalu
+            teliti, bertanggung jawab, dan terbuka terhadap masukan.
+        </p>
+
+    </section>
+
+    <!-- KEAHLIAN DAN LAYANAN -->
+    <section id="layanan">
+
+        <h2 class="judul">Keahlian dan Layanan</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <div class="icon">📝</div>
+                <h3>Penulisan Artikel</h3>
+                <p>
+                    Membuat artikel sederhana dengan bahasa
+                    yang jelas dan mudah dipahami.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📱</div>
+                <h3>Caption Media Sosial</h3>
+                <p>
+                    Membantu membuat caption untuk postingan
+                    media sosial.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🛍️</div>
+                <h3>Deskripsi Produk</h3>
+                <p>
+                    Menyusun deskripsi produk yang informatif
+                    dan menarik.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📄</div>
+                <h3>Pengetikan</h3>
+                <p>
+                    Membantu mengetik dan merapikan dokumen
+                    sesuai instruksi.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Rangkuman</h3>
+                <p>
+                    Membantu merangkum informasi menjadi
+                    lebih ringkas dan terstruktur.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📋</div>
+                <h3>Laporan</h3>
+                <p>
+                    Membantu menyusun laporan sederhana
+                    berdasarkan informasi yang tersedia.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTOH KARYA -->
+    <section class="karya" id="karya">
+
+        <h2 class="judul">Contoh Karya Saya</h2>
+
+        <div class="karya-box">
+            <h3>1. Contoh Caption Produk</h3>
+
+            <p>
+                Temukan produk favoritmu dengan desain menarik
+                dan kualitas yang sesuai kebutuhan.
+                Pilih produk yang kamu suka dan lengkapi
+                aktivitas sehari-harimu!
+            </p>
+        </div>
+
+        <div class="karya-box">
+            <h3>2. Contoh Deskripsi Produk</h3>
+
+            <p>
+                Tas kasual dengan desain simpel dan praktis.
+                Cocok digunakan untuk sekolah, bepergian,
+                atau kegiatan sehari-hari. Desainnya mudah
+                dipadukan dengan berbagai gaya.
+            </p>
+        </div>
+
+        <div class="karya-box">
+            <h3>3. Contoh Artikel</h3>
+
+            <p>
+                <b>Manfaat Membaca Buku</b>
+                <br><br>
+
+                Membaca buku merupakan kegiatan yang bermanfaat
+                untuk menambah pengetahuan dan memperluas wawasan.
+                Dengan membaca secara rutin, kita dapat mempelajari
+                hal baru, meningkatkan kosakata, dan melatih
+                kemampuan memahami informasi.
+            </p>
+        </div>
+
+        <p style="text-align:center;">
+            Semua tulisan di atas merupakan contoh karya latihan.
+        </p>
+
+    </section>
+
+    <!-- KONTAK -->
+    <section class="kontak" id="kontak">
+
+        <h2 class="judul">Hubungi Saya</h2>
+
+        <p>
+            Terbuka untuk kesempatan kerja sama di bidang penulisan.
+        </p>
+
+        <a href="winanurpahma895@gmail.com" class="button">
+            Kirim Email
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Wina's Portfolio | Jasa Penulisan</p>
+    </footer>
+
+</body>
+</html>
+```
